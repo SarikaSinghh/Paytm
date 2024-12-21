@@ -1,0 +1,121 @@
+/* Section Styles */
+.home-section {
+    background-color: white;
+    height: 100vh;
+  }
+  
+  /* Container Styles */
+  .home-container {
+    display: grid;
+    max-width: 1280px;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  /* Content Section */
+  .home-content {
+    grid-column: span 7;
+    align-self: center;
+    margin-right: auto;
+  }
+  
+  /* Heading Styles */
+  .home-heading {
+    max-width: 40rem;
+    margin-bottom: 1rem;
+    font-size: 2.25rem; /* 4xl */
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: serif;
+    color: #4b5563; /* gray-700 */
+  }
+  
+  .home-heading .text-sky {
+    color: #0284c7; /* sky-800 */
+  }
+  
+  .home-heading .text-blue {
+    color: #2563eb; /* blue-600 */
+  }
+  
+  /* Description Styles */
+  .home-description {
+    max-width: 40rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300; /* font-light */
+    color: #4b5563; /* gray-700 */
+    font-size: 1.125rem; /* lg */
+    line-height: 1.75rem;
+  }
+  
+  /* Buttons */
+  .signin-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111827; /* gray-900 */
+    border: 1px solid #d1d5db; /* gray-300 */
+    border-radius: 0.5rem;
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+  
+  .signin-btn:hover {
+    background-color: #f9fafb; /* gray-100 */
+  }
+  
+  .dashboard-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1d4ed8; /* blue-700 */
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .dashboard-btn:hover {
+    background-color: #1e40af; /* blue-800 */
+  }
+  
+  /* Image Section */
+  .home-image {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 5;
+  }
+  
+  .home-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 1024px) {
+    .home-container {
+      gap: 3rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  
+    .home-image {
+      display: flex;
+    }
+  
+    .home-heading {
+      font-size: 3rem; /* 5xl */
+    }
+  
+    .home-description {
+      font-size: 1.25rem; /* xl */
+    }
+  }
